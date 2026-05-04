@@ -611,7 +611,7 @@ const localizedCopy = {
     "nav.lessons": "Lessons",
     "nav.practice": "Practice",
     "nav.finalQuiz": "Final Quiz",
-    "translate.button": "ترجمة بالمصري",
+    "translate.button": "ترجمة",
     "translate.enableAria": "Enable Egyptian Arabic translation",
     "translate.disableAria": "Disable Egyptian Arabic translation",
     "theme.darkModeLabel": "Dark mode",
@@ -669,7 +669,7 @@ const localizedCopy = {
     "nav.lessons": "الدروس",
     "nav.practice": "مراجعة",
     "nav.finalQuiz": "الامتحان النهائي",
-    "translate.button": "ترجمة بالمصري",
+    "translate.button": "ترجمة",
     "translate.enableAria": "فعّل الترجمة بالمصري",
     "translate.disableAria": "اقفل الترجمة بالمصري",
     "theme.darkModeLabel": "مود غامق",
@@ -954,8 +954,8 @@ function applyLanguage(language) {
   } catch {
     // Language still works even if storage is unavailable.
   }
-  translateToggle.setAttribute("aria-pressed", String(isMasry));
-  translateToggle.setAttribute(
+  translateToggle?.setAttribute("aria-pressed", String(isMasry));
+  translateToggle?.setAttribute(
     "aria-label",
     isMasry ? getCopy("translate.disableAria") : getCopy("translate.enableAria"),
   );
@@ -992,8 +992,9 @@ function setupLanguageToggle() {
     savedLanguage = null;
   }
   applyLanguage(langFromUrl || savedLanguage || "en");
-  translateToggle.addEventListener("click", () => {
-    applyLanguage(activeLanguage === "ar-eg" ? "en" : "ar-eg");
+  translateToggle?.addEventListener("click", () => {
+    const nextLanguage = document.body.dataset.language === "ar-eg" ? "en" : "ar-eg";
+    applyLanguage(nextLanguage);
   });
 }
 function setupThemeToggle() {
