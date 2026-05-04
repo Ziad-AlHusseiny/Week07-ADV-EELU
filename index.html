@@ -11,15 +11,15 @@
       <a class="brand" href="#top" aria-label="Week 07 Study Hub">
         <span class="brand-mark">07</span>
         <span>
-          <strong>Study Hub</strong>
-          <small>Project Management Concepts</small>
+          <strong data-i18n="brand.title">Study Hub</strong>
+          <small data-i18n="brand.subtitle">Project Management Concepts</small>
         </span>
       </a>
       <div class="header-actions">
         <nav class="top-nav" aria-label="Main navigation">
-          <a href="#lessons">Lessons</a>
-          <a href="#practice">Practice</a>
-          <a href="#final-quiz">Final Quiz</a>
+          <a href="#lessons" data-i18n="nav.lessons">Lessons</a>
+          <a href="#practice" data-i18n="nav.practice">Practice</a>
+          <a href="#final-quiz" data-i18n="nav.finalQuiz">Final Quiz</a>
         </nav>
         <button
           class="theme-toggle"
@@ -35,45 +35,54 @@
           </svg>
           <span class="theme-text">Light mode</span>
         </button>
+        <button
+          class="translate-toggle"
+          id="translateToggle"
+          type="button"
+          aria-label="Toggle Egyptian Arabic translation"
+          aria-pressed="false"
+        >
+          <span class="translate-text" data-i18n="translate.button">ترجمة بالمصري</span>
+        </button>
       </div>
     </header>
 
     <main id="top">
       <section class="hero">
         <div class="hero-copy">
-          <p class="course-label">Advanced Software Engineering - Week 07</p>
-          <h1>Project Management Concepts, explained simply.</h1>
-          <p>
+          <p class="course-label" data-i18n="hero.label">Advanced Software Engineering - Week 07</p>
+          <h1 data-i18n="hero.title">Project Management Concepts, explained simply.</h1>
+          <p data-i18n="hero.description">
             Study the Four P's, stakeholders, leadership, team structure,
             communication, process planning, decomposition, successful projects,
             and W5HH with instant practice questions.
           </p>
           <div class="hero-actions">
-            <a class="primary-action" href="#lessons">Start studying</a>
-            <a class="secondary-action" href="#final-quiz">Take final quiz</a>
+            <a class="primary-action" href="#lessons" data-i18n="hero.start">Start studying</a>
+            <a class="secondary-action" href="#final-quiz" data-i18n="hero.finalQuiz">Take final quiz</a>
           </div>
         </div>
 
-        <div class="hero-visual" aria-label="Management spectrum visual">
+        <div class="hero-visual" aria-label="Management spectrum visual" data-i18n-aria="hero.visualAria">
           <div class="spectrum-center">
-            <span>Management</span>
-            <strong>Spectrum</strong>
+            <span data-i18n="spectrum.management">Management</span>
+            <strong data-i18n="spectrum.spectrum">Spectrum</strong>
           </div>
           <div class="orbit-item people">
-            <strong>People</strong>
-            <span>Most important</span>
+            <strong data-i18n="orbit.people.title">People</strong>
+            <span data-i18n="orbit.people.desc">Most important</span>
           </div>
           <div class="orbit-item product">
-            <strong>Product</strong>
-            <span>Software to build</span>
+            <strong data-i18n="orbit.product.title">Product</strong>
+            <span data-i18n="orbit.product.desc">Software to build</span>
           </div>
           <div class="orbit-item process">
-            <strong>Process</strong>
-            <span>How work is done</span>
+            <strong data-i18n="orbit.process.title">Process</strong>
+            <span data-i18n="orbit.process.desc">How work is done</span>
           </div>
           <div class="orbit-item project">
-            <strong>Project</strong>
-            <span>All delivery work</span>
+            <strong data-i18n="orbit.project.title">Project</strong>
+            <span data-i18n="orbit.project.desc">All delivery work</span>
           </div>
         </div>
       </section>
@@ -81,21 +90,21 @@
       <section class="overview">
         <div>
           <span class="metric-number">12</span>
-          <span class="metric-label">lesson parts</span>
+          <span class="metric-label" data-i18n="metrics.lessonParts">lesson parts</span>
         </div>
         <div>
           <span class="metric-number">60</span>
-          <span class="metric-label">practice questions</span>
+          <span class="metric-label" data-i18n="metrics.practiceQuestions">practice questions</span>
         </div>
         <div>
           <span class="metric-number">1</span>
-          <span class="metric-label">final score</span>
+          <span class="metric-label" data-i18n="metrics.finalScore">final score</span>
         </div>
       </section>
 
       <section class="study-layout" id="lessons">
-        <aside class="lesson-nav" aria-label="Lesson list">
-          <h2>Material</h2>
+        <aside class="lesson-nav" aria-label="Lesson list" data-i18n-aria="lessons.aria">
+          <h2 data-i18n="lessons.material">Material</h2>
           <div id="lessonLinks"></div>
         </aside>
         <div class="lesson-stack" id="lessonStack"></div>
@@ -103,9 +112,9 @@
 
       <section class="practice-panel" id="practice">
         <div>
-          <p class="course-label">Quick review</p>
-          <h2>Before the final quiz</h2>
-          <p>
+          <p class="course-label" data-i18n="practice.label">Quick review</p>
+          <h2 data-i18n="practice.title">Before the final quiz</h2>
+          <p data-i18n="practice.description">
             Focus on repeated exam clues: People is the most important P,
             customers define requirements, senior managers define business
             issues, and unclear roles cause lack of accountability.
@@ -117,28 +126,28 @@
       <section class="quiz-section" id="final-quiz">
         <div class="quiz-heading">
           <div>
-            <p class="course-label">Final exam practice</p>
-            <h2>Answer, check, and repeat.</h2>
+            <p class="course-label" data-i18n="quiz.label">Final exam practice</p>
+            <h2 data-i18n="quiz.title">Answer, check, and repeat.</h2>
           </div>
           <div class="score-box" aria-live="polite">
             <span id="scoreValue">0 / 0</span>
-            <small>current score</small>
+            <small data-i18n="quiz.currentScore">current score</small>
           </div>
         </div>
         <div class="quiz-tools">
-          <button class="tool-button" id="checkAnswers" type="button">
+          <button class="tool-button" id="checkAnswers" type="button" data-i18n="quiz.checkAnswers">
             Check answers
           </button>
-          <button class="tool-button ghost" id="resetQuiz" type="button">
+          <button class="tool-button ghost" id="resetQuiz" type="button" data-i18n="quiz.reset">
             Reset
           </button>
         </div>
         <div class="question-list" id="questionList"></div>
         <div class="quiz-tools quiz-tools-bottom">
-          <button class="tool-button" id="checkAnswersBottom" type="button">
+          <button class="tool-button" id="checkAnswersBottom" type="button" data-i18n="quiz.checkAnswers">
             Check answers
           </button>
-          <button class="tool-button ghost" id="resetQuizBottom" type="button">
+          <button class="tool-button ghost" id="resetQuizBottom" type="button" data-i18n="quiz.reset">
             Reset
           </button>
         </div>
@@ -146,35 +155,37 @@
     </main>
 
     <footer class="site-footer">
-      <p>Built from SWE Week 07 material and the provided questions.</p>
+      <p data-i18n="footer.built">Built from SWE Week 07 material and the provided questions.</p>
       <div class="designer">
-        <span class="designer-name">Designed by : Ziad-AlHusseiny</span>
-        <div class="social-links" aria-label="Designer links">
+        <span class="designer-name" data-i18n="footer.designedBy">Designed by : Ziad-AlHusseiny</span>
+        <div class="social-links" aria-label="Designer links" data-i18n-aria="footer.linksAria">
           <a
             href="https://www.linkedin.com/in/ziad-al-husseiny-79581132b/"
             target="_blank"
             rel="noreferrer"
             aria-label="LinkedIn profile"
+            data-i18n-aria="footer.linkedinAria"
           >
             <svg aria-hidden="true" viewBox="0 0 24 24">
               <path
                 d="M5.2 8.7h3.4v10.8H5.2V8.7Zm1.7-5.3a2 2 0 1 1 0 4 2 2 0 0 1 0-4Zm4.3 5.3h3.2v1.5h.1c.4-.8 1.5-1.8 3.1-1.8 3.3 0 3.9 2.2 3.9 5v6.1h-3.4v-5.4c0-1.3 0-2.9-1.8-2.9s-2.1 1.4-2.1 2.8v5.5h-3.4V8.7Z"
               />
             </svg>
-            <span>LinkedIn</span>
+            <span data-i18n="footer.linkedin">LinkedIn</span>
           </a>
           <a
             href="https://github.com/Ziad-AlHusseiny"
             target="_blank"
             rel="noreferrer"
             aria-label="GitHub profile"
+            data-i18n-aria="footer.githubAria"
           >
             <svg aria-hidden="true" viewBox="0 0 24 24">
               <path
                 d="M12 2.8a9.2 9.2 0 0 0-2.9 17.9c.5.1.7-.2.7-.5v-1.7c-2.9.6-3.5-1.2-3.5-1.2-.5-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 0 1.6 1.1 1.6 1.1.9 1.5 2.4 1.1 3 .8.1-.7.4-1.1.7-1.3-2.3-.3-4.7-1.1-4.7-5.1 0-1.1.4-2.1 1.1-2.8-.1-.3-.5-1.4.1-2.8 0 0 .9-.3 2.9 1.1.8-.2 1.7-.3 2.6-.3s1.8.1 2.6.3c2-1.4 2.9-1.1 2.9-1.1.6 1.4.2 2.5.1 2.8.7.8 1.1 1.7 1.1 2.8 0 4-2.4 4.8-4.7 5.1.4.3.8 1 .8 2v2.3c0 .3.2.6.8.5A9.2 9.2 0 0 0 12 2.8Z"
               />
             </svg>
-            <span>GitHub</span>
+            <span data-i18n="footer.github">GitHub</span>
           </a>
         </div>
       </div>

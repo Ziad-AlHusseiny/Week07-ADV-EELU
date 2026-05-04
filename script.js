@@ -221,6 +221,507 @@ const lessons = [
   },
 ];
 
+const quizQuestionsMasry = [
+  {
+    q: "طبقًا لطيف الإدارة، أنهي واحدة من الأربع P's بتتعتبر أهم عنصر لنجاح المشروع؟",
+    options: ["المنتج", "العملية", "الناس", "المشروع"],
+    answer: 2,
+    note: "الناس هي أهم عنصر.",
+  },
+  {
+    q: "أنهي stakeholder هو اللي بيحدد مشاكل البزنس اللي بتأثر بقوة على المشروع؟",
+    options: ["العملاء", "المديرين الكبار", "مديري المشاريع", "الممارسين"],
+    answer: 1,
+    note: "المديرين الكبار هم اللي بيحددوا مشاكل البزنس.",
+  },
+  {
+    q: "مين اللي بيحدد متطلبات السوفتوير؟",
+    options: ["المستخدمين النهائيين", "مديري المشاريع", "العملاء", "الممارسين"],
+    answer: 2,
+    note: "العملاء هم اللي بيحددوا المتطلبات.",
+  },
+  {
+    q: "المهارات التقنية المطلوبة لبناء المنتج بيقدمها مين؟",
+    options: ["مديري المشاريع", "الممارسين", "المديرين الكبار", "المستخدمين النهائيين"],
+    answer: 1,
+    note: "الممارسين هم اللي بيقدموا المهارات التقنية.",
+  },
+  {
+    q: "القائد اللي بيثبت التزامه من خلال التضحية المشتركة بيطبق أنهي ممارسة؟",
+    options: ["Model the way", "Inspire a shared vision", "Enable others to act", "Encourage the heart"],
+    answer: 0,
+    note: "Model the way يعني القائد يكون قدوة في الفعل.",
+  },
+  {
+    q: "مشاركة اتخاذ القرار وتحديد الأهداف بتوصف أنهي ممارسة؟",
+    options: ["Challenge the process", "Inspire a shared vision", "Encourage the heart", "Enable others to act"],
+    answer: 3,
+    note: "Enable others to act بتزوّد كفاءة الفريق.",
+  },
+  {
+    q: "الاحتفال بالأهداف المشتركة والانتصارات بيوصف أنهي ممارسة؟",
+    options: ["Challenge the process", "Encourage the heart", "Model the way", "Enable others to act"],
+    answer: 1,
+    note: "Encourage the heart بيبني روح الفريق.",
+  },
+  {
+    q: "أنهي اختيار مش مذكور كعامل بيأثر على هيكل الفريق؟",
+    options: ["صعوبة المشكلة", "الجودة المطلوبة", "صرامة موعد التسليم", "لغة البرمجة المستخدمة"],
+    answer: 3,
+    note: "لغة البرمجة مش ضمن العوامل الأساسية المذكورة.",
+  },
+  {
+    q: "حجم البرنامج غالبًا بيتقاس بإيه؟",
+    options: ["عدد الممارسين", "عدد الأسطر أو Function Points", "عدد ساعات العمل أسبوعيًا", "عدد المستخدمين النهائيين"],
+    answer: 1,
+    note: "الحجم بيتقاس بـ LOC أو Function Points.",
+  },
+  {
+    q: "النتيجة الأساسية لعدم وضوح الأدوار هي:",
+    options: ["جو عمل متوتر", "اختيار عملية غلط", "غياب المساءلة ورمي اللوم", "زيادة الثقة"],
+    answer: 2,
+    note: "غموض الأدوار بيؤدي لغياب المساءلة.",
+  },
+  {
+    q: "أنهي نوع تواصل بيعتمد على التقارير والاجتماعات المنظمة؟",
+    options: ["غير رسمي", "رسمي", "غير مؤكد", "Agile"],
+    answer: 1,
+    note: "التواصل الرسمي بيكون منظم.",
+  },
+  {
+    q: "الكلام اليومي السريع وطلب المساعدة أمثلة على:",
+    options: ["تواصل رسمي", "تواصل غير رسمي", "تفكيك العملية", "صرامة التسليم"],
+    answer: 1,
+    note: "التواصل غير الرسمي بيكون شخصي ويومي.",
+  },
+  {
+    q: "إن السوفتوير الجديد لازم يشتغل مع أنظمة موجودة بالفعل ده بيوصف:",
+    options: ["Interoperability", "عمر الفريق", "حجم المنتج", "رؤية مشتركة"],
+    answer: 0,
+    note: "Interoperability يعني الأنظمة تعرف تشتغل مع بعض.",
+  },
+  {
+    q: "بعد ما الخطة المبدئية للمشروع تتعمل، إيه اللي بيبدأ؟",
+    options: ["إطلاق المنتج", "تفكيك العملية", "الاحتفال بالفريق", "إغلاق الميزانية"],
+    answer: 1,
+    note: "تفكيك العملية بيبدأ بعد الخطة المبدئية.",
+  },
+  {
+    q: "تفكيك المشكلة ممكن يقسم النطاق إلى وظائف، وعناصر بيانات، أو:",
+    options: ["كلاسات المشكلة", "المديرين الكبار", "مواعيد التسليم", "اجتماعات المستخدم"],
+    answer: 0,
+    note: "الطريقة الثالثة هي التفكيك المعتمد على الكلاسات.",
+  },
+  {
+    q: "في W5HH، أنهي سؤال بيقدّر الموارد؟",
+    options: ["Why?", "Where?", "How much?", "Who?"],
+    answer: 2,
+    note: "How much بيسأل عن حجم الموارد المطلوبة.",
+  },
+  {
+    q: "أنهي سؤال في W5HH بيحدد المسئولية؟",
+    options: ["Who?", "When?", "Why?", "Where?"],
+    answer: 0,
+    note: "Who؟ يعني مين المسئول.",
+  },
+  {
+    q: "أنهي عامل بيسأل إذا كانت المشكلة ممكن تتقسم لأجزاء أصغر؟",
+    options: ["عمر الفريق", "Modularity", "واقعية الميزانية", "نوع الـ stakeholder"],
+    answer: 1,
+    note: "Modularity معناها قابلية المشكلة للتقسيم.",
+  },
+  {
+    q: "التعرض المتكرر للفشل غالبًا بيسبب:",
+    options: ["ارتفاع المعنويات", "انخفاض الثقة والمعنويات", "مساءلة أعلى", "عدم يقين أقل"],
+    answer: 1,
+    note: "الفشل المتكرر بيقلل الثقة والمعنويات.",
+  },
+  {
+    q: "أفضل وصف بسيط لفرق Agile ذاتية التنظيم هو:",
+    options: ["بتتجاهل المعايير", "بتختار طريقة الشغل داخل القيود", "مفيش مدير خالص", "بتشتغل من غير تخطيط"],
+    answer: 1,
+    note: "الفرق الذاتية التنظيم بتختار أسلوبها داخل القيود المتاحة.",
+  },
+  {
+    q: "أنهي عامل نجاح للمشروع معناه إن المستخدمين مستمرين في المشاركة أثناء التطوير؟",
+    options: ["مشاركة مستخدمين فعّالة", "صرامة موعد التسليم", "إجراءات متقطعة", "فشل العملية"],
+    answer: 0,
+    note: "مشاركة المستخدمين الفعّالة معناها حضورهم المستمر.",
+  },
+  {
+    q: "أنهي stakeholder بيتعامل مع السوفتوير بعد الإطلاق؟",
+    options: ["المديرين الكبار", "المستخدمين النهائيين", "الممارسين", "مديري العملية"],
+    answer: 1,
+    note: "المستخدمين النهائيين هم اللي بيستخدموا المنتج بعد الإطلاق.",
+  },
+  {
+    q: "أنهي ممارسة من Kouzes بتشجع التجربة والتعلم من الفشل؟",
+    options: ["Challenge the process", "Model the way", "Encourage the heart", "Enable others to act"],
+    answer: 0,
+    note: "Challenge the process بتشجع التجارب والتعلم المستمر.",
+  },
+  {
+    q: "أنهي عامل في اختيار العملية بيركز على الناس اللي هتنفذ الشغل؟",
+    options: ["العملاء", "أعضاء الفريق", "الأنظمة القديمة فقط", "حجم قاعدة البيانات فقط"],
+    answer: 1,
+    note: "اختيار العملية بيعتمد على الناس اللي هتقوم بالتنفيذ.",
+  },
+];
+
+const lessonsMasry = [
+  {
+    title: "طيف الإدارة: الأربع P's",
+    summary:
+      "طيف الإدارة فيه 4 أجزاء مرتبطين ببعض: People وProduct وProcess وProject. أهم جزء فيهم هو الناس، لأن نجاح المشروع بيعتمد على مهاراتهم وتعاونهم.",
+    points: [
+      "People: أعضاء الفريق والـ stakeholders، وده أهم عنصر.",
+      "Product: السوفتوير أو السيستم اللي المفروض يتبني.",
+      "Process: الطريقة والأنشطة اللي بنشتغل بيها عشان نبني المنتج.",
+      "Project: كل الشغل المطلوب عشان نطلع المنتج ونسلمه.",
+    ],
+    focus:
+      "تلميحة امتحان: أهم P هي People. السوفتوير نفسه = Product. الطريقة أو النشاط = Process.",
+    questions: [
+      "إيه هي الأربع P's؟",
+      "أنهي P هي الأهم؟",
+      "إيه الفرق بين Product وProcess؟",
+    ],
+  },
+  {
+    title: "أصحاب المصلحة (Stakeholders)",
+    summary:
+      "الـ Stakeholders هم أشخاص أو جهات بتأثر في المشروع أو المشروع بيأثر عليهم، وكل طرف فيهم ليه دور واضح.",
+    points: [
+      "Senior managers بيحددوا مشاكل وأهداف البزنس.",
+      "Project managers بيخططوا، بينظموا، وبيتابعوا الفريق.",
+      "Practitioners بيقدموا المهارات التقنية اللازمة لبناء المنتج.",
+      "Customers بيحددوا المتطلبات، وEnd-users بيستخدموا النظام بعد الإطلاق.",
+    ],
+    focus:
+      "تلميحة امتحان: Senior managers = مشاكل البزنس. Customers = المتطلبات. Practitioners = التنفيذ التقني.",
+    questions: [
+      "مين اللي بيحدد مشاكل البزنس؟",
+      "مين اللي بيحدد متطلبات السوفتوير؟",
+      "اذكر الأنواع الأساسية للـ stakeholders.",
+    ],
+  },
+  {
+    title: "قيادة الفريق: ممارسات Kouzes",
+    summary:
+      "قائد الفريق بيوجّه الناس، يبني ثقة، ويحافظ على الحماس. Kouzes وصف 5 ممارسات قيادية عملية.",
+    points: [
+      "Model the way: القائد يكون قدوة ويتحمل مع الفريق.",
+      "Inspire a shared vision: يربط هدف الفريق بأهداف أفراده.",
+      "Challenge the process: يشجع التجربة والمخاطرة والتعلم.",
+      "Enable others to act: يشاركهم القرار وتحديد الأهداف.",
+      "Encourage the heart: يحتفل بالإنجازات والنجاحات.",
+    ],
+    focus:
+      "تلميحة امتحان: التضحية المشتركة = Model the way. القرار المشترك = Enable others to act. الاحتفال = Encourage the heart.",
+    questions: [
+      "أنهي ممارسة معناها التضحية المشتركة؟",
+      "أنهي ممارسة معناها مشاركة اتخاذ القرار؟",
+      "ليه القائد بيحتفل بالنجاح؟",
+    ],
+  },
+  {
+    title: "العوامل اللي بتأثر على هيكل الفريق",
+    summary:
+      "هيكل الفريق المناسب بيتحدد حسب حالة المشروع. المشاريع الكبيرة أو المعقدة بتحتاج تنظيم مختلف عن المشاريع البسيطة.",
+    points: [
+      "صعوبة المشكلة بتحدد مستوى المهارة المطلوب.",
+      "حجم البرنامج بيتقاس بعدد الأسطر (LOC) أو Function Points.",
+      "عمر الفريق يعني هيفضل شغال مع بعض قد إيه.",
+      "الموديولارية، الجودة، صرامة الديدلاين، واحتياج التواصل بيأثروا على الهيكل.",
+    ],
+    focus:
+      "تلميحة امتحان: لغة البرمجة مش عامل أساسي في الليستة. الحجم بيتقاس بـ LOC أو Function Points.",
+    questions: [
+      "اذكر 4 عوامل بتأثر على هيكل الفريق.",
+      "حجم البرنامج بيتقاس بإيه؟",
+      "ليه الديدلاين الصارم بيأثر على الفريق؟",
+    ],
+  },
+  {
+    title: "عوامل سُمية الفريق",
+    summary:
+      "سمّية الفريق معناها مشاكل بتضرب التركيز والمعنويات والمساءلة والتعاون.",
+    points: [
+      "جو الشغل العصبي والمندفع بيهدر طاقة الفريق.",
+      "الإحباط العالي بيولّد صراعات.",
+      "الإجراءات المتقطعة بتسبب لخبطة.",
+      "الأدوار الغير واضحة بتسبب غياب المساءلة ورمي اللوم.",
+      "تكرار الفشل بيقلل الثقة والمعنويات.",
+    ],
+    focus:
+      "تلميحة امتحان: عدم وضوح الأدوار = غياب المساءلة + رمي اللوم.",
+    questions: [
+      "إيه اللي بيحصل لما الأدوار تبقى مش واضحة؟",
+      "اذكر عاملين من عوامل سمّية الفريق.",
+      "تكرار الفشل بيأثر إزاي على المعنويات؟",
+    ],
+  },
+  {
+    title: "فرق Agile",
+    summary:
+      "فرق Agile محتاجة ثقة، ومهارات مناسبة، وتنظيم ذاتي. الفريق بيختار طريقة الشغل داخل حدود البزنس والمؤسسة.",
+    points: [
+      "الثقة بتساعد على التعاون وتحمل المسئولية المشتركة.",
+      "تنوع المهارات لازم يناسب المشكلة.",
+      "التنظيم الذاتي يعني الفريق يختار أسلوب التنفيذ.",
+    ],
+    focus:
+      "تلميحة امتحان: فريق Agile = ثقة + مهارات متوازنة + تنظيم ذاتي.",
+    questions: [
+      "إيه أهم 3 صفات في فرق Agile؟",
+      "يعني إيه self-organizing؟",
+      "ليه الثقة عنصر مهم؟",
+    ],
+  },
+  {
+    title: "تنسيق الفريق والتواصل",
+    summary:
+      "فرق السوفتوير محتاجة تواصل رسمي وغير رسمي. الرسمي منظم، وغير الرسمي يومي وسريع.",
+    points: [
+      "التواصل الرسمي يشمل التقارير، المستندات، والاجتماعات المنظمة.",
+      "التواصل غير الرسمي يشمل الكلام السريع، الشات، وطلب المساعدة.",
+      "النوعين مهمين لتنسيق الشغل وحل المشاكل.",
+    ],
+    focus:
+      "تلميحة امتحان: التقارير والاجتماعات المنظمة = رسمي. الكلام اليومي السريع = غير رسمي.",
+    questions: [
+      "قارن بين التواصل الرسمي وغير الرسمي.",
+      "هات مثال لكل نوع.",
+      "ليه الفريق محتاج آليات تواصل؟",
+    ],
+  },
+  {
+    title: "مشاكل التنسيق والتواصل",
+    summary:
+      "المشاريع الكبيرة، وعدم اليقين، والتكامل مع أنظمة تانية بيعملوا مشاكل تنسيق لفرق السوفتوير.",
+    points: [
+      "الحجم الكبير بيزود التعقيد واللخبطة.",
+      "عدم اليقين معناه المتطلبات أو الظروف بتتغير باستمرار.",
+      "Interoperability يعني النظام الجديد لازم يشتغل مع أنظمة موجودة بالفعل.",
+    ],
+    focus:
+      "تلميحة امتحان: لما السؤال يجيب أنظمة قديمة/حالّية، غالبًا المقصود interoperability.",
+    questions: [
+      "ليه المشاريع الكبيرة صعب تنسيقها؟",
+      "إيه معنى uncertainty؟",
+      "عرّف interoperability.",
+    ],
+  },
+  {
+    title: "العملية والتخطيط",
+    summary:
+      "الفريق بيختار process model بناءً على العميل، الناس، خصائص المنتج، وبيئة المشروع. بعدها بيحط خطة مبدئية.",
+    points: [
+      "الموديل لازم يناسب العملاء.",
+      "لازم يناسب الناس اللي هتنفذ الشغل.",
+      "لازم يناسب خصائص المنتج.",
+      "لازم يناسب بيئة المشروع.",
+      "بعد الخطة المبدئية بيبدأ process decomposition.",
+    ],
+    focus:
+      "تلميحة امتحان: اختيار العملية بيعتمد على العميل، الفريق، المنتج، والبيئة.",
+    questions: [
+      "إيه العوامل اللي بتأثر على اختيار process model؟",
+      "إيه اللي بيبدأ بعد الخطة المبدئية؟",
+      "ليه التخطيط مهم؟",
+    ],
+  },
+  {
+    title: "تفكيك المشكلة (Problem Decomposition)",
+    summary:
+      "تفكيك المشكلة يعني تقسيم النطاق لأجزاء أصغر وأسهل للفهم. وبيتسمى كمان partitioning أو problem elaboration.",
+    points: [
+      "Functional decomposition: تقسيم حسب الوظائف.",
+      "Data-based decomposition: تقسيم حسب عناصر البيانات الظاهرة للمستخدم.",
+      "Class-based decomposition: تقسيم حسب الكلاسات.",
+      "التقسيم يفضل مستمر لحد ما كل الوظائف/الكلاسات تبقى واضحة.",
+    ],
+    focus:
+      "تلميحة امتحان: طرق التفكيك ممكن تكون وظيفية، بيانات، أو كلاسات.",
+    questions: [
+      "إيه اسم تاني لـ problem decomposition؟",
+      "اذكر 3 طرق للتفكيك.",
+      "إمتى نوقف التفكيك؟",
+    ],
+  },
+  {
+    title: "خصائص المشروع الناجح",
+    summary:
+      "المشاريع الناجحة غالبًا بيكون فيها متطلبات واضحة، مشاركة مستخدمين، قيادة قوية، تخطيط جيد، فريق كفء، ونتيجة شغالة بجودة.",
+    points: [
+      "المتطلبات واضحة ومقبولة من أصحاب المصلحة.",
+      "المستخدمين مشاركين أثناء التطوير.",
+      "مدير المشروع عنده مهارات قيادة.",
+      "تقديرات الوقت والميزانية واقعية.",
+      "المنتج النهائي محقق النطاق والجودة.",
+    ],
+    focus:
+      "تلميحة امتحان: النجاح محتاج ناس + تخطيط + مشاركة مستخدمين + منتج شغال بجودة.",
+    questions: [
+      "اذكر 5 خصائص للمشروع الناجح.",
+      "ليه مشاركة المستخدمين مهمة؟",
+      "إزاي التقديرات الواقعية بتفيد المشروع؟",
+    ],
+  },
+  {
+    title: "مبدأ W5HH",
+    summary:
+      "W5HH هي قائمة أسئلة للتخطيط: Why, What, When, Who, Where, How, How much.",
+    points: [
+      "Why: ليه بنعمل النظام.",
+      "What: إيه الشغل اللي هيتعمل.",
+      "When: إمتى والجدول الزمني.",
+      "Who: مين المسئول.",
+      "Where: فين داخل التنظيم.",
+      "How: هننفذ إزاي إداريًا وتقنيًا.",
+      "How much: هنحتاج موارد قد إيه.",
+    ],
+    focus:
+      "تلميحة امتحان: How much بتسأل عن الموارد زي الناس، الأدوات، السوفتوير، والداتابيز.",
+    questions: [
+      "اكتب أسئلة W5HH.",
+      "أنهي سؤال بيقدّر الموارد؟",
+      "ليه W5HH مفيدة؟",
+    ],
+  },
+];
+const reviewItemsMasry = [
+  ["الـ Four P's", "الناس، المنتج، العملية، المشروع."],
+  ["أهم P", "الناس."],
+  ["المديرين الكبار", "بيحددوا مشاكل وأهداف البزنس."],
+  ["العملاء", "بيحددوا المتطلبات."],
+  ["الممارسين", "بيقدموا المهارات التقنية."],
+  ["الأدوار الغير واضحة", "بتسبب غياب المساءلة ورمي اللوم."],
+  ["فريق Agile", "ثقة، مهارات متوازنة، وتنظيم ذاتي."],
+  ["W5HH", "ليه، إيه، إمتى، مين، فين، إزاي، قد إيه."],
+];
+
+const localizedCopy = {
+  en: {
+    "site.title": "Week 07 Study Hub | Project Management Concepts",
+    "brand.title": "Study Hub",
+    "brand.subtitle": "Project Management Concepts",
+    "brand.aria": "Week 07 Study Hub",
+    "nav.aria": "Main navigation",
+    "nav.lessons": "Lessons",
+    "nav.practice": "Practice",
+    "nav.finalQuiz": "Final Quiz",
+    "translate.button": "ترجمة بالمصري",
+    "translate.enableAria": "Enable Egyptian Arabic translation",
+    "translate.disableAria": "Disable Egyptian Arabic translation",
+    "theme.darkModeLabel": "Dark mode",
+    "theme.lightModeLabel": "Light mode",
+    "theme.switchToDark": "Switch to dark mode",
+    "theme.switchToLight": "Switch to light mode",
+    "hero.label": "Advanced Software Engineering - Week 07",
+    "hero.title": "Project Management Concepts, explained simply.",
+    "hero.description":
+      "Study the Four P's, stakeholders, leadership, team structure, communication, process planning, decomposition, successful projects, and W5HH with instant practice questions.",
+    "hero.start": "Start studying",
+    "hero.finalQuiz": "Take final quiz",
+    "spectrum.management": "Management",
+    "spectrum.spectrum": "Spectrum",
+    "orbit.people.title": "People",
+    "orbit.people.desc": "Most important",
+    "orbit.product.title": "Product",
+    "orbit.product.desc": "Software to build",
+    "orbit.process.title": "Process",
+    "orbit.process.desc": "How work is done",
+    "orbit.project.title": "Project",
+    "orbit.project.desc": "All delivery work",
+    "hero.visualAria": "Management spectrum visual",
+    "metrics.lessonParts": "lesson parts",
+    "metrics.practiceQuestions": "practice questions",
+    "metrics.finalScore": "final score",
+    "lessons.aria": "Lesson list",
+    "lessons.material": "Material",
+    "lessons.questionsOnPart": "Questions on this part",
+    "practice.label": "Quick review",
+    "practice.title": "Before the final quiz",
+    "practice.description":
+      "Focus on repeated exam clues: People is the most important P, customers define requirements, senior managers define business issues, and unclear roles cause lack of accountability.",
+    "quiz.label": "Final exam practice",
+    "quiz.title": "Answer, check, and repeat.",
+    "quiz.currentScore": "current score",
+    "quiz.checkAnswers": "Check answers",
+    "quiz.reset": "Reset",
+    "quiz.correctAnswerPrefix": "Correct answer",
+    "quiz.scoreTemplate": "{score} / {total}",
+    "footer.built": "Built from SWE Week 07 material and the provided questions.",
+    "footer.designedBy": "Designed by : Ziad-AlHusseiny",
+    "footer.linksAria": "Designer links",
+    "footer.linkedinAria": "LinkedIn profile",
+    "footer.githubAria": "GitHub profile",
+    "footer.linkedin": "LinkedIn",
+    "footer.github": "GitHub",
+  },
+  "ar-eg": {
+    "site.title": "مذاكرة سريعة | مفاهيم إدارة المشروعات",
+    "brand.title": "مذاكرة سريعة",
+    "brand.subtitle": "مفاهيم إدارة المشروعات",
+    "brand.aria": "مذاكرة سريعة للأسبوع 07",
+    "nav.aria": "التنقل الرئيسي",
+    "nav.lessons": "الدروس",
+    "nav.practice": "مراجعة",
+    "nav.finalQuiz": "الامتحان النهائي",
+    "translate.button": "ترجمة بالمصري",
+    "translate.enableAria": "فعّل الترجمة بالمصري",
+    "translate.disableAria": "اقفل الترجمة بالمصري",
+    "theme.darkModeLabel": "مود غامق",
+    "theme.lightModeLabel": "مود فاتح",
+    "theme.switchToDark": "حوّل للمود الغامق",
+    "theme.switchToLight": "حوّل للمود الفاتح",
+    "hero.label": "هندسة برمجيات متقدمة - الأسبوع 07",
+    "hero.title": "مفاهيم إدارة المشروعات ببساطة.",
+    "hero.description":
+      "ذاكر الـ Four P's، والـ stakeholders، والقيادة، وهيكل الفريق، والتواصل، وتخطيط العملية، والتقسيم، وعوامل نجاح المشروع، وW5HH مع أسئلة تدريب فورية.",
+    "hero.start": "ابدأ المذاكرة",
+    "hero.finalQuiz": "ادخل الامتحان النهائي",
+    "spectrum.management": "الإدارة",
+    "spectrum.spectrum": "الطيف",
+    "orbit.people.title": "الناس",
+    "orbit.people.desc": "الأهم",
+    "orbit.product.title": "المنتج",
+    "orbit.product.desc": "السوفتوير المطلوب",
+    "orbit.process.title": "العملية",
+    "orbit.process.desc": "الشغل بيتعمل إزاي",
+    "orbit.project.title": "المشروع",
+    "orbit.project.desc": "كل شغل التسليم",
+    "hero.visualAria": "رسم توضيحي لطيف الإدارة",
+    "metrics.lessonParts": "أجزاء الدرس",
+    "metrics.practiceQuestions": "أسئلة تدريب",
+    "metrics.finalScore": "النتيجة النهائية",
+    "lessons.aria": "قائمة الدروس",
+    "lessons.material": "المحتوى",
+    "lessons.questionsOnPart": "أسئلة على الجزء ده",
+    "practice.label": "مراجعة سريعة",
+    "practice.title": "قبل الامتحان النهائي",
+    "practice.description":
+      "ركّز على النقاط اللي بتتكرر في الامتحان: People أهم P، والعميل بيحدد المتطلبات، والمديرين الكبار بيحددوا مشاكل البزنس، وغموض الأدوار بيعمل غياب للمساءلة.",
+    "quiz.label": "تدريب الامتحان النهائي",
+    "quiz.title": "جاوب، راجع، وكرّر.",
+    "quiz.currentScore": "الدرجة الحالية",
+    "quiz.checkAnswers": "راجع الإجابات",
+    "quiz.reset": "إعادة",
+    "quiz.correctAnswerPrefix": "الإجابة الصحيحة",
+    "quiz.scoreTemplate": "{score} / {total}",
+    "footer.built": "الموقع مبني من محتوى SWE أسبوع 07 والأسئلة المتاحة.",
+    "footer.designedBy": "تصميم: Ziad-AlHusseiny",
+    "footer.linksAria": "روابط المصمم",
+    "footer.linkedinAria": "حساب لينكدإن",
+    "footer.githubAria": "حساب جيت هاب",
+    "footer.linkedin": "لينكدإن",
+    "footer.github": "جيت هاب",
+  },
+};
+
+let activeLanguage = "en";
+
 const reviewItems = [
   ["Four P's", "People, Product, Process, Project."],
   ["Most important P", "People."],
@@ -385,6 +886,7 @@ const reviewGrid = document.querySelector("#reviewGrid");
 const questionList = document.querySelector("#questionList");
 const scoreValue = document.querySelector("#scoreValue");
 const themeToggle = document.querySelector("#themeToggle");
+const translateToggle = document.querySelector("#translateToggle");
 const checkAnswersButton = document.querySelector("#checkAnswers");
 const checkAnswersBottomButton = document.querySelector("#checkAnswersBottom");
 const resetQuizButton = document.querySelector("#resetQuiz");
@@ -395,6 +897,71 @@ function slugify(text) {
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/(^-|-$)/g, "");
+}
+
+function getLessons() {
+  return activeLanguage === "ar-eg" ? lessonsMasry : lessons;
+}
+
+function getQuizQuestions() {
+  return activeLanguage === "ar-eg" ? quizQuestionsMasry : quizQuestions;
+}
+function getCopy(key) {
+  const table = localizedCopy[activeLanguage] || localizedCopy.en;
+  return table[key] ?? localizedCopy.en[key] ?? "";
+}
+
+function updateStaticCopy() {
+  document.title = getCopy("site.title");
+  document.querySelector(".brand")?.setAttribute("aria-label", getCopy("brand.aria"));
+  document.querySelector(".top-nav")?.setAttribute("aria-label", getCopy("nav.aria"));
+  document.querySelectorAll("[data-i18n-aria]").forEach((element) => {
+    const key = element.getAttribute("data-i18n-aria");
+    if (!key) return;
+    element.setAttribute("aria-label", getCopy(key));
+  });
+  document.querySelectorAll("[data-i18n]").forEach((element) => {
+    const key = element.dataset.i18n;
+    if (!key) return;
+    element.textContent = getCopy(key);
+  });
+}
+
+function formatScore(score, total) {
+  return getCopy("quiz.scoreTemplate")
+    .replace("{score}", String(score))
+    .replace("{total}", String(total));
+}
+
+function getReviewItems() {
+  return activeLanguage === "ar-eg" ? reviewItemsMasry : reviewItems;
+}
+
+function rerenderContent() {
+  renderLessons();
+  renderReview();
+  renderQuiz();
+}
+
+function applyLanguage(language) {
+  activeLanguage = language === "ar-eg" ? "ar-eg" : "en";
+  const isMasry = activeLanguage === "ar-eg";
+  document.documentElement.lang = isMasry ? "ar" : "en";
+  document.documentElement.dir = isMasry ? "rtl" : "ltr";
+  document.body.dataset.language = activeLanguage;
+  try {
+    localStorage.setItem("week07-language", activeLanguage);
+  } catch {
+    // Language still works even if storage is unavailable.
+  }
+  translateToggle.setAttribute("aria-pressed", String(isMasry));
+  translateToggle.setAttribute(
+    "aria-label",
+    isMasry ? getCopy("translate.disableAria") : getCopy("translate.enableAria"),
+  );
+  updateStaticCopy();
+  rerenderContent();
+  applyTheme(document.body.dataset.theme || "dark");
 }
 
 function applyTheme(theme) {
@@ -409,13 +976,26 @@ function applyTheme(theme) {
   themeToggle.setAttribute("aria-pressed", String(isLight));
   themeToggle.setAttribute(
     "aria-label",
-    isLight ? "Switch to dark mode" : "Switch to light mode",
+    isLight ? getCopy("theme.switchToDark") : getCopy("theme.switchToLight"),
   );
   themeToggle.querySelector(".theme-text").textContent = isLight
-    ? "Dark mode"
-    : "Light mode";
+    ? getCopy("theme.darkModeLabel")
+    : getCopy("theme.lightModeLabel");
 }
 
+function setupLanguageToggle() {
+  const langFromUrl = new URLSearchParams(window.location.search).get("lang");
+  let savedLanguage = null;
+  try {
+    savedLanguage = localStorage.getItem("week07-language");
+  } catch {
+    savedLanguage = null;
+  }
+  applyLanguage(langFromUrl || savedLanguage || "en");
+  translateToggle.addEventListener("click", () => {
+    applyLanguage(activeLanguage === "ar-eg" ? "en" : "ar-eg");
+  });
+}
 function setupThemeToggle() {
   const themeFromUrl = new URLSearchParams(window.location.search).get("theme");
   let savedTheme = null;
@@ -431,8 +1011,10 @@ function setupThemeToggle() {
 }
 
 function renderLessons() {
-  lessons.forEach((lesson, index) => {
-    const id = slugify(lesson.title);
+  lessonLinks.textContent = "";
+  lessonStack.textContent = "";
+  getLessons().forEach((lesson, index) => {
+    const id = `lesson-${index + 1}`;
     const link = document.createElement("a");
     link.className = "lesson-link";
     link.href = `#${id}`;
@@ -455,7 +1037,7 @@ function renderLessons() {
       </div>
       <div class="exam-focus">${lesson.focus}</div>
       <div class="mini-questions">
-        <h3>Questions on this part</h3>
+        <h3>${getCopy("lessons.questionsOnPart")}</h3>
         <ol>${lesson.questions.map((question) => `<li>${question}</li>`).join("")}</ol>
       </div>
     `;
@@ -464,7 +1046,8 @@ function renderLessons() {
 }
 
 function renderReview() {
-  reviewItems.forEach(([title, text], index) => {
+  reviewGrid.textContent = "";
+  getReviewItems().forEach(([title, text], index) => {
     const item = document.createElement("div");
     item.className = "review-item";
     item.innerHTML = `
@@ -479,8 +1062,10 @@ function renderReview() {
 }
 
 function renderQuiz() {
-  scoreValue.textContent = `0 / ${quizQuestions.length}`;
-  quizQuestions.forEach((item, index) => {
+  const activeQuizQuestions = getQuizQuestions();
+  questionList.textContent = "";
+  scoreValue.textContent = formatScore(0, activeQuizQuestions.length);
+  activeQuizQuestions.forEach((item, index) => {
     const card = document.createElement("article");
     card.className = "question-card";
     card.dataset.answer = item.answer;
@@ -496,13 +1081,14 @@ function renderQuiz() {
           `,
         )
         .join("")}
-      <div class="answer-note">Correct answer: ${item.options[item.answer]}. ${item.note}</div>
+      <div class="answer-note">${getCopy("quiz.correctAnswerPrefix")}: ${item.options[item.answer]}. ${item.note}</div>
     `;
     questionList.appendChild(card);
   });
 }
 
 function checkAnswers() {
+  const activeQuizQuestions = getQuizQuestions();
   let score = 0;
   const cards = [...document.querySelectorAll(".question-card")];
   cards.forEach((card) => {
@@ -520,23 +1106,22 @@ function checkAnswers() {
       card.classList.add("incorrect");
     }
   });
-  scoreValue.textContent = `${score} / ${quizQuestions.length}`;
+  scoreValue.textContent = formatScore(score, activeQuizQuestions.length);
 }
 
 function resetQuiz() {
+  const activeQuizQuestions = getQuizQuestions();
   document.querySelectorAll(".question-card").forEach((card) => {
     card.classList.remove("correct", "incorrect");
   });
   document.querySelectorAll("input[type='radio']").forEach((input) => {
     input.checked = false;
   });
-  scoreValue.textContent = `0 / ${quizQuestions.length}`;
+  scoreValue.textContent = formatScore(0, activeQuizQuestions.length);
 }
 
 setupThemeToggle();
-renderLessons();
-renderReview();
-renderQuiz();
+setupLanguageToggle();
 
 checkAnswersButton.addEventListener("click", checkAnswers);
 checkAnswersBottomButton.addEventListener("click", checkAnswers);

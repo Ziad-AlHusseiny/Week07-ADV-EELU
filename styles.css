@@ -144,7 +144,8 @@ button {
   outline: none;
 }
 
-.theme-toggle {
+.theme-toggle,
+.translate-toggle {
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -161,10 +162,13 @@ button {
     transform 160ms ease,
     background 160ms ease,
     border-color 160ms ease;
+  white-space: nowrap;
 }
 
 .theme-toggle:hover,
-.theme-toggle:focus-visible {
+.theme-toggle:focus-visible,
+.translate-toggle:hover,
+.translate-toggle:focus-visible {
   transform: translateY(-1px);
   background: rgba(255, 255, 255, 0.16);
   border-color: rgba(255, 255, 255, 0.34);
@@ -213,6 +217,12 @@ body[data-theme="light"] .top-nav a:focus-visible {
 }
 
 body[data-theme="light"] .theme-toggle {
+  color: #17385f;
+  background: rgba(23, 56, 95, 0.08);
+  border-color: rgba(23, 56, 95, 0.18);
+}
+
+body[data-theme="light"] .translate-toggle {
   color: #17385f;
   background: rgba(23, 56, 95, 0.08);
   border-color: rgba(23, 56, 95, 0.18);
